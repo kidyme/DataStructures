@@ -81,7 +81,7 @@ LkList InsertList(LkList list, int index, int value) {
         return NULL;// index的值不合法
     }
 
-    // 空表添加的情况
+    // 添加第一个的情况
     if (index == 1) {
         LkList new_node = (LkList) malloc(sizeof(LkList));
         if (!new_node) {
