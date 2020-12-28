@@ -56,6 +56,8 @@ int CreateUDGGraph(GraphPtr graph);
 int CreateUDNGraph(GraphPtr graph);
 // 无向网构造
 
+void PrintAdjacencyMatrix(GraphPtr graph);
+
 //----------深度优先搜索----------------------------------------------
 
 void DepthFirstSearch(GraphPtr graph);

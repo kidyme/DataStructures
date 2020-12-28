@@ -4,6 +4,15 @@
 
 #include "Graph.h"
 
+void PrintAdjacencyMatrix(GraphPtr graph) {
+    for (int i = 1; i <= graph->vertex_num; ++i) {
+        for (int j = 1; j <= graph->vertex_num; ++j) {
+            printf("%d ", graph->arcs[i][j].adj);
+        }
+        printf("\n");
+    }
+}
+
 void BreadthFirstSearch(GraphPtr graph) {
     printf("广度优先搜索: ");
 
